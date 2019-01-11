@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Qiwi Payment</title>
+</head>
+<body>
+
+<form id="sendForm" th:action="${paymentSystemUrl}" method="Post">
+    <p>
+        <input type="hidden" name="data" th:value="${data}"/>
+    </p>
+</form>
+<script>
+    document.getElementById('sendForm').submit();
+</script>
+
+</body>
+</html>
